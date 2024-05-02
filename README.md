@@ -44,4 +44,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE.md) f
 
 ## Acknowledgments
 
-- Special thanks to [contributors](CONTRIBUTORS.md) who have helped to improve this project.
+- Special thanks to https://github.com/ordxHardik/ who have helped to improve this project.
