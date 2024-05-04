@@ -41,7 +41,3 @@ Contributions are welcome! If you find any issues or have suggestions for improv
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE.md) file for details.
-
-## Acknowledgments
-
-- Special thanks to https://github.com/ordxHardik/ who have helped to improve this project.
