@@ -1,43 +1,49 @@
-# Eventify - Event Management System
+# Netflix Clone
 
-Eventify is an event management system designed to simplify the process of organizing events, managing registrations, and handling ticket bookings for both organizers and attendees. With Eventify, you can create and customize events, track attendees, monitor check-in and check-out times effortlessly, and much more.
+This is a responsive Netflix clone built using HTML and CSS.
+
+## Table of Contents
+
+- [Introduction](#introduction)
+- [Features](#features)
+- [Demo](#demo)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+
+## Introduction
+
+This project is a simplified version of the Netflix UI, built entirely with HTML and CSS. It's designed to showcase my front-end development skills and understanding of responsive design principles.
 
 ## Features
 
-- **Event Creation**: Easily create and customize events with details such as date, time, location, description, and ticket types.
-  
-- **Registration Management**: Manage attendee registrations efficiently, track registration statuses, and handle any modifications or cancellations.
+- Responsive design that adapts to different screen sizes.
+- Mimics the layout and styling of the Netflix website.
+- Basic navigation and hover effects.
 
-- **Ticket Booking**: Streamline the ticket booking process for attendees with secure and convenient online booking options.
+## Demo
 
-- **Attendee Tracking**: Keep track of attendees, their preferences, and any special requirements they may have.
-
-- **Check-in and Check-out Monitoring**: Monitor attendee check-in and check-out times seamlessly, ensuring smooth event entry and exit processes.
-
-- **Communication Tools**: Facilitate communication between organizers and attendees through built-in messaging features.
-
-- **Analytics and Reporting**: Gain insights into event performance with comprehensive analytics and reporting tools.
+[Link to live demo](#) (Add a live demo link once you have it deployed)
 
 ## Installation
 
-1. Clone the repository: `git clone https://github.com/yourusername/eventify.git`
+1. Clone the repository:
 
-2. Install dependencies: `npm install`
+```bash
+git clone https://github.com/shubham4672/Netflix-Clone/
+```
 
-3. Configure environment variables:
+2. Open the `index.html` file in your web browser.
 
-Create a `.env` file based on the provided `.env.example` file and fill in the necessary configurations.
+## Usage
 
-4. Run the application: `npm run start dev`
-
-5. Access the application:
-
-Open your web browser and navigate to `http://localhost:3000` to access the Eventify dashboard.
+Simply open the `index.html` file in your preferred web browser to view the Netflix clone. You can navigate through the different sections and interact with the UI elements.
 
 ## Contributing
 
-Contributions are welcome! If you find any issues or have suggestions for improvements, please feel free to open an issue or submit a pull request.
+Contributions are welcome! If you'd like to contribute to this project, feel free to fork the repository and submit a pull request with your changes.
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE.md) file for details.
+This project is licensed under the [LICENSE](LICENSE.md).
