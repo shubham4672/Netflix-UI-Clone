@@ -176,6 +176,44 @@ nav .logo {
   width: 40vw;
 }
 
+.feature__image__container {
+  width: 100%;
+  position: relative;
+}
+.feature__2__poster__container {
+  position: absolute;
+  bottom: 8%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 16em;
+  display: flex;
+  align-items: center;
+  background-color: black;
+  border: 2px solid rgba(255, 255, 255, 0.25);
+  border-radius: 10px;
+  height: 60px;
+  padding: 0.25rem 0.6rem;
+  gap: 15px;
+  min-height: 6rem;
+}
+.poster__details {
+  width: 60%;
+}
+.download__gif__container {
+  width: 20%;
+  height: 100%;
+}
+.download__gif__container img {
+  width: 61px;
+  margin-top: 11px;
+}
+.poster__container {
+  width: 20%;
+}
+.poster__container img {
+  height: 70px;
+}
 /* Frequently Asked Page */
 .faq {
   padding: 10px 12%;
@@ -348,10 +386,21 @@ input[type="radio"] {
     position: relative;
     width: 52vw;
   }
+  .feature__2__poster__container {
+    left: 45%;
+  }
+}
+@media only screen and (max-width: 895px) {
+  .feature__2__poster__container {
+    left: 48%;
+  }
 }
 @media only screen and (max-width: 835px) {
   .special {
     display: none;
+  }
+  .feature__2__poster__container {
+    left: 52%;
   }
 }
 @media only screen and (max-width: 750px) {
@@ -375,6 +424,9 @@ input[type="radio"] {
   .special {
     display: none;
   }
+  .feature__2__poster__container {
+    left: 55%;
+  }
 }
 @media only screen and (max-width: 570px) {
   .email-signup {
@@ -383,6 +435,13 @@ input[type="radio"] {
   }
   .special {
     display: none;
+  }
+  .feature__image__container {
+    width: 138%;
+    position: relative;
+  }
+  .feature__2__poster__container {
+    left: 59%;
   }
 }
 @media only screen and (max-width: 442px) {
@@ -418,5 +477,12 @@ input[type="radio"] {
   }
   .special {
     display: none;
+  }
+  .feature__image__container {
+    width: 178%;
+    position: relative;
+  }
+  .feature__2__poster__container {
+    left: 51%;
   }
 }
