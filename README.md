@@ -24,7 +24,7 @@ This project is a simplified version of the Netflix UI, built entirely with HTML
 
 ## Demo
 
-[Link to live demo](#https://netflix-clone-seven-blue-65.vercel.app/)
+[Link to live demo](https://netflix-clone-seven-blue-65.vercel.app/)
 
 ![image](https://github.com/shubham4672/Netflix-Clone/assets/98074227/6bb84a87-3565-422e-a1d0-802175e9fef5)
 
