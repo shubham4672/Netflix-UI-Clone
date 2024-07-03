@@ -180,7 +180,7 @@ nav .logo {
   font-weight: 900;
   width: 35vw;
   text-align: left;
-  margin: 0vh 6vw;
+  margin: 4vh 6vw;
 }
 
 .text-col p {
@@ -211,6 +211,8 @@ nav .logo {
   width: 391px;
   z-index: -1;
 }
+
+/* Third Page */
 
 .feature__image__container {
   width: 100%;
