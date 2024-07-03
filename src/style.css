@@ -21,7 +21,7 @@ body {
       rgba(0, 0, 0, 0.5) 80%,
       rgba(0, 0, 0, 0.8) 90%
     ),
-    url("Images/backgroundnew.jpg");
+    url("/src/images/BackgroundImage.jpg");
   background-size: cover;
   background-position: center;
   padding: 25px 4%;
@@ -76,7 +76,7 @@ nav .logo {
 }
 
 .header-content h1 {
-  font-size: 2.9rem;
+  font-size: 3.6rem;
   font-weight: 900;
   width: 82vw;
   text-align: center;
@@ -89,19 +89,38 @@ nav .logo {
 }
 
 .header-content p {
-  font-size: 1.3rem;
+  font-size: 1.6rem;
   font-weight: 400;
   line-height: 1.5;
   text-align: center;
 }
 
-.email-signup {
+.header-content .email-signup {
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 4px;
+  margin-top: 30px;
+}
+
+.last-call {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.last-call .email-signup {
   background-color: #fff;
   border-radius: 4px;
   display: flex;
+  justify-content: center;
   align-items: center;
   margin-top: 30px;
   overflow: hidden;
+  width: 40vw;
 }
 
 .email-signup input {
@@ -144,10 +163,11 @@ nav .logo {
 }
 
 .row {
-  width: 78vw;
+  min-width: 80vw;
   display: flex;
   align-items: center;
   justify-content: flex-start;
+  flex-wrap: nowrap;
 }
 
 .text-col {
@@ -156,7 +176,7 @@ nav .logo {
 }
 
 .text-col h2 {
-  font-size: 2.9rem;
+  font-size: 3.3rem;
   font-weight: 900;
   width: 35vw;
   text-align: left;
@@ -164,22 +184,39 @@ nav .logo {
 }
 
 .text-col p {
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   font-weight: 400;
   width: 32vw;
   text-align: left;
   margin: 1vh 6vw;
 }
 
-.img-col img {
+.img-col .img1 {
   position: relative;
-  width: 40vw;
+}
+
+.img-col .vid1 video {
+  position: absolute;
+  top: 95px;
+  left: 84px;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.img-col .vid2 video {
+  position: absolute;
+  top: 42px;
+  left: 123px;
+  overflow: hidden;
+  width: 391px;
+  z-index: -1;
 }
 
 .feature__image__container {
   width: 100%;
   position: relative;
 }
+
 .feature__2__poster__container {
   position: absolute;
   bottom: 8%;
@@ -197,96 +234,124 @@ nav .logo {
   gap: 15px;
   min-height: 6rem;
 }
+
 .poster__details {
   width: 60%;
 }
+
 .download__gif__container {
   width: 20%;
   height: 100%;
 }
+
 .download__gif__container img {
   width: 61px;
   margin-top: 11px;
 }
+
 .poster__container {
   width: 20%;
 }
+
 .poster__container img {
   height: 70px;
 }
+
 /* Frequently Asked Page */
-.faq {
-  padding: 10px 12%;
-  text-align: center;
-  font-size: 32px;
-}
 
-.ques {
-  margin: 60px auto;
-  width: 100%;
-  max-width: 750px;
-}
-
-.ques li {
-  list-style-type: none;
-  width: 100%;
-  padding: 5px;
-}
-
-.ques li label {
+.faqs {
+  margin-top: 10px;
   display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  padding: 20px;
+}
+
+.faqs h2 {
+  margin: 50px 0 30px;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bolder;
+}
+
+.faq-container {
+  max-width: 75vw;
+  margin: 0 auto;
+}
+
+.faq {
+  min-width: 75vw;
+  width: 100%;
+  background-color: #2d2d2d;
+  margin: 5px 0;
+  padding: 30px;
+  position: relative;
+  overflow: hidden;
+  transition: 0.4s all ease;
+}
+
+.faq:hover {
+  background-color: #404040;
+}
+
+.faq.active {
+  background-color: #2d2d2d;
+}
+
+.faq-title {
+  margin: 0 35px 0 0;
+  font-size: 1.8rem;
+  font-weight: 550;
+  cursor: pointer;
+}
+
+.faq-text {
+  margin: 30px 40px 0 0;
   font-size: 1.5rem;
   font-weight: 500;
-  background-color: #303030;
-  margin-bottom: 2px;
-  cursor: pointer;
-  position: relative;
-}
-
-label::after {
-  content: "+";
-  font-size: 34px;
-  position: absolute;
-  right: 20px;
-  transition: transform 0.3s;
-}
-
-input[type="radio"] {
   display: none;
 }
 
-.ques .content {
-  background-color: #303030;
-  text-align: left;
-  padding: 0 30px;
-  max-height: 0;
-  overflow: hidden;
+.faq.active .faq-text {
+  display: block;
 }
 
-.ques .content p {
-  font-size: 1.2rem;
-  font-weight: 400;
+.faq-toggle {
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  padding: 0;
+  position: absolute;
+  top: 30px;
+  right: 20px;
+  height: 30px;
+  width: 30px;
 }
 
-.ques input[type="radio"]:checked + label + .content {
-  max-height: 600px;
-  padding: 30px 20px;
+.faq-toggle:focus {
+  outline: 0;
 }
 
-.ques input[type="radio"]:checked + label::after {
-  transform: rotate(135deg);
+.faq-toggle .fa-times {
+  display: none;
 }
 
-.faq .last-call .email-signup {
-  max-width: 600px;
-  margin: 20px auto 60px;
+.faq.active .fa-times {
+  display: block;
 }
 
-.faq .last-call p {
-  font-size: 19px;
-  font-weight: normal;
+.faq.active .fa-chevron-down {
+  display: none;
+}
+
+i {
+  font-size: 1.5rem;
+  margin-right: 40px;
+  color: #fff;
 }
 
 /* Footer */
@@ -363,6 +428,33 @@ input[type="radio"] {
 }
 
 /* media queries */
+@media only screen and (max-width: 1350px) {
+  .row {
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    margin: 1vh auto;
+  }
+  .text-col h2 {
+    font-size: 2.8rem;
+    width: 57vw;
+    margin: 0vh auto;
+  }
+  .text-col p {
+    font-size: 1.4rem;
+    font-weight: 500;
+    width: 56vw;
+    text-align: left;
+    margin: 3vh auto;
+  }
+  .img-col img {
+    position: relative;
+    width: auto;
+  }
+  .feature__2__poster__container {
+    left: 45%;
+  }
+}
 @media only screen and (max-width: 920px) {
   .row {
     flex-wrap: wrap;
@@ -384,7 +476,7 @@ input[type="radio"] {
   }
   .img-col img {
     position: relative;
-    width: 52vw;
+    width: auto;
   }
   .feature__2__poster__container {
     left: 45%;
@@ -418,7 +510,7 @@ input[type="radio"] {
   }
   .img-col img {
     position: relative;
-    width: 68vw;
+    width: auto;
     margin-bottom: 34px;
   }
   .special {
