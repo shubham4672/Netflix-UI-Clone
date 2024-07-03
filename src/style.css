@@ -290,7 +290,7 @@ nav .logo {
   padding: 30px;
   position: relative;
   overflow: hidden;
-  transition: 0.4s all ease;
+  transition: 0.5s step-end;
 }
 
 .faq:hover {
@@ -347,7 +347,7 @@ nav .logo {
   display: block;
 }
 
-.faq.active .fa-chevron-down {
+.faq.active .fa-plus {
   display: none;
 }
 
