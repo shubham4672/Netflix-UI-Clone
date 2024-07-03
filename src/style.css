@@ -223,7 +223,7 @@ nav .logo {
 .feature__2__poster__container {
   position: absolute;
   bottom: 8%;
-  left: 45%;
+  left: 50%;
   transform: translateX(-50%);
   width: 100%;
   max-width: 16em;
