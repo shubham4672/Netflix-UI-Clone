@@ -77,19 +77,19 @@ nav .logo {
 
 .header-content h1 {
   font-size: 3.6rem;
-  font-weight: 900;
+  font-weight: 700;
   width: 82vw;
   text-align: center;
 }
 
 .header-content h3 {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   font-weight: 400;
   margin: 2vh 0vw;
 }
 
 .header-content p {
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   font-weight: 400;
   line-height: 1.5;
   text-align: center;
@@ -118,9 +118,9 @@ nav .logo {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 30px;
+  margin: 30px 0;
   overflow: hidden;
-  width: 40vw;
+  width: 35vw;
 }
 
 .email-signup input {
@@ -220,7 +220,7 @@ nav .logo {
 .feature__2__poster__container {
   position: absolute;
   bottom: 8%;
-  left: 50%;
+  left: 45%;
   transform: translateX(-50%);
   width: 100%;
   max-width: 16em;
@@ -352,6 +352,16 @@ i {
   font-size: 1.5rem;
   margin-right: 40px;
   color: #fff;
+}
+
+/* Last call */
+
+.last-call {
+  margin: 50px 0;
+}
+
+.last-call h4 {
+  font-size: 1.7rem;
 }
 
 /* Footer */
