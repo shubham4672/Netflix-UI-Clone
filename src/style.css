@@ -52,6 +52,7 @@ nav .logo {
 
 .btns :first-child img {
   border: 0;
+  margin-left: 10px;
 }
 
 .btns button {
